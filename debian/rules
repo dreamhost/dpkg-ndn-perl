@@ -2,7 +2,15 @@
 # -*- makefile -*-
 
 # Uncomment this to turn on verbose mode.
-#export DH_VERBOSE=1
+export DH_VERBOSE=1
 
 %:
-	dh $@ 
+	dh $@ --parallel
+
+# configure our perl here...
+override_dh_auto_configure:
+	./Configure -de -Dprefix='/opt/ndn-perl' -Accflags='-fPIC' -Duse64bitall
+
+#override_dh_auto_test:
+	#rm t/porting/[ptma]*.t
+	#LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH dh_auto_test
