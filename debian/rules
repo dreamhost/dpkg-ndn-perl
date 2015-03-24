@@ -9,7 +9,9 @@ export DH_VERBOSE=1
 
 # configure our perl here...
 override_dh_auto_configure:
-	./Configure -de -Dprefix='/opt/ndn-perl' -Accflags='-fPIC' -Duse64bitall
+	./Configure -de -Dprefix='/opt/ndn-perl' -Accflags='-fPIC' \
+		-Duse64bitall \
+		-Duse64bitint
 
 #override_dh_auto_test:
 	#rm t/porting/[ptma]*.t
