@@ -1,5 +1,5 @@
-ndn-perl (5.20.2) unstable; urgency=low
+ndn-perl (5.20.2~14.04~ndn0) trusty; urgency=low
 
   * Initial Release.
 
- -- Chris Weyl <Chris Weyl <cweyl@alumni.drew.edu>>  Tue, 17 Mar 2015 16:03:08 -0700
+ -- Chris Weyl <chris.weyl@dreamhost.com>  Tue, 17 Mar 2015 16:03:08 -0700
