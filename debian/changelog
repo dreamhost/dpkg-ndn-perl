@@ -1,3 +1,15 @@
+ndn-perl (5.20.2~14.04~ndn2) trusty; urgency=medium
+
+  * Remove -Duse64bitall (launchpad hates it?!)
+
+ -- Chris Weyl <cweyl@alumni.drew.edu>  Mon, 23 Mar 2015 19:00:53 -0700
+
+ndn-perl (5.20.2~14.04~ndn1) trusty; urgency=medium
+
+  * Add -Duse64bitint.
+
+ -- Chris Weyl <chris.weyl@dreamhost.com>  Mon, 23 Mar 2015 18:53:37 -0700
+
 ndn-perl (5.20.2~14.04~ndn0) trusty; urgency=low
 
   * Initial Release.
