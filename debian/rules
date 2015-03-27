@@ -11,6 +11,8 @@ export DH_VERBOSE=1
 override_dh_auto_configure:
 	./Configure -de -Dprefix='/opt/ndn-perl' -Accflags='-fPIC' \
 		-Dotherlibdirs='/opt/ndn-perl/shared/lib/ndn_perl' \
+		-Dotherlibdirs='/opt/ndn-perl/modules/perl5' \
+		-Dotherlibdirs='/opt/ndn-perl/modules/perl5/x86_64-linux' \
 		-Duse64bitint
 
 #override_dh_auto_test:
