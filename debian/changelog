@@ -1,3 +1,10 @@
+ndn-perl (5.20.2-1) UNRELEASED; urgency=medium
+
+  * Adjust version/release, so we can start building with values that make
+    sense.
+
+ -- Chris Weyl <cweyl@alumni.drew.edu>  Fri, 27 Mar 2015 14:36:59 -0700
+
 ndn-perl (5.20.2~14.04~ndn2) trusty; urgency=medium
 
   * Remove -Duse64bitall (launchpad hates it?!)
