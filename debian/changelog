@@ -1,3 +1,10 @@
+ndn-perl (5.20.2.1) UNRELEASED; urgency=medium
+
+  * Provide more @INC for better ndn-perl-modules'ing
+  * Rejigger version again (native!)
+
+ -- Chris Weyl <cweyl@alumni.drew.edu>  Fri, 27 Mar 2015 17:08:30 -0700
+
 ndn-perl (5.20.2-1~14.04~ppa1) trusty; urgency=medium
 
   * Build for trusty.
