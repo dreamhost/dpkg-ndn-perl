@@ -14,7 +14,3 @@ override_dh_auto_configure:
 		-Dotherlibdirs='/opt/ndn-perl/modules/perl5' \
 		-Dotherlibdirs='/opt/ndn-perl/modules/perl5/x86_64-linux' \
 		-Duse64bitint
-
-#override_dh_auto_test:
-	#rm t/porting/[ptma]*.t
-	#LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH dh_auto_test
