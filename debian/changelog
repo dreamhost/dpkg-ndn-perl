@@ -1,3 +1,9 @@
+ndn-perl (5.20.2.1~12.04~ppa1) precise; urgency=medium
+
+  * Build for precise.
+
+ -- Chris Weyl <cweyl@alumni.drew.edu>  Fri, 27 Mar 2015 17:32:50 -0700
+
 ndn-perl (5.20.2.1) UNRELEASED; urgency=medium
 
   * Provide more @INC for better ndn-perl-modules'ing
