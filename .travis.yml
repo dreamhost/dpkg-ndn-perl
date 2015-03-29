@@ -1,4 +1,6 @@
 language: perl
+env:
+    - DEB_BUILD_OPTIONS="parallel=4"
 before_install:
     - sudo apt-add-repository -y ppa:rsrchboy/ndn-perl
     - sudo apt-get update -q
