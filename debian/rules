@@ -13,4 +13,5 @@ override_dh_auto_configure:
 		-Dotherlibdirs='/opt/ndn-perl/shared/lib/ndn_perl' \
 		-Dotherlibdirs='/opt/ndn-perl/modules/perl5' \
 		-Dotherlibdirs='/opt/ndn-perl/modules/perl5/x86_64-linux' \
+		-Duseithreads \
 		-Duse64bitint
