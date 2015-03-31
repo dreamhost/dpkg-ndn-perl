@@ -1,0 +1,19 @@
+#!/bin/sh
+
+set -ex
+
+# fixup our repository...
+sudo apt-get install -y git-bzr-ng
+git fetch --unshallow ||:
+git checkout -b master ||: # for git-bzr.... *le sigh*
+
+# setup ssh...
+eval `ssh-agent`
+ssh-add debian/travis/deploy_id
+mkdir -p ~/.ssh
+cp debian/travis/known_hosts ~/.ssh/
+
+# and push out to our bzr branch...
+bzr launchpad-login rsrchboy
+git bzr init
+git bzr push lp:~rsrchboy/+junk/ndn-perl
