@@ -17,5 +17,5 @@ override_dh_auto_configure:
 		-Duse64bitint
 
 override_dh_auto_clean:
-	git clean -X -f # remove all files git ignores
+	git clean -X -f ||: # remove all files git ignores
 	dh_auto_clean
